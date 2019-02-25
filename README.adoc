@@ -2,12 +2,96 @@
 honeymon, ihoneymon@gmail.com
 v0.0.1, 2019-04-27
 
+:스부: 스프링 부트
+
 .봄날에 놀고 싶은 아홉수 개발자
 ****
-이제 날 놓아줘~~~
+이제 날 놓아줘~~~ +
+독거노인에게도 봄날은 오는가
 ****
+
+'스프링 프레임워크가 자바 표준 프레임워크가 되었다면, 스프링 부트는 자바 표준 개발플랫폼이 되었다' 고 말할 수 있다.
+
+== 내가 생각하는 스프링 부트 사용수준
+* 초급
+
+* 중급
+
+* 고급
+
+* 특급
+
+== 스프링 부트 소개
+스프링 부트를 한마디로 소개한다면,
+****
+**스프링 프레임워크**를 기반으로 한 개발 플랫폼
+****
+이라고 할 수 있습니다.
+
+그래서 스프링 부트를 잘 사용해보려면 **스프링** 프레임워크에 대한 개념과 작동원리를 이해하는 과정이 필요합니다. 물론 스프링 프로그래밍 모델을 알고 있으면 쉽게 사용할 수 있습니다.
+
+== 스프링 부트 아키텍처
+{스부}는 동기방식의 '서블릿 스택'과 비동기 방식의 '리액티브 스택'을 모두 지원한다. 이런 스택의 양분은 스프링 프레임워크 5.0부터 리액터(Reactor)를 품으면서 가능해졌습니다.
+
+
+== BCD(Build - Code - Deploy)
+* **B**uild: {스부}에서 Gradle/Maven 에서 동작하는 {스부} 플러그인 제공
+* **C**ode: 스프링 프로그래밍 모델을 제공하여 비즈니스 로직 구현에만 집중
+* **D**eploy: 빌드 과정에서 자기완비적인 실행가능한 JAR 형태로 패키징
+
+=== Build
+
+==== 빌드도구
+
+.빌드도구, 당신의 선택은?
+****
+Maven vs Gradle
+****
+
+==== 빌드 스크립트
+.DSL, 당신의 선택은?
+****
+Groovy Vs Kotlin
+****
+
+`build.gradle.kts`
+그레이들 빌드 스크립트 대세는 코틀린!! Gradle Kotlin DSL로 가자!!
+
+link::./build.gradle.kts[]
+
+그루비의 자유로운 문법보다는 조금 제약이 있는 코틀린을 통해 통일성 있는 빌드스크립트로 거듭나기!
+
+이후에는 코틀린으로 서버사이드 프로그래밍까지...!
+
+
+==== 의존성 관리
+의존성 관리(Dependency management)는 빌드도구를 이용하는 우리가 바라는 가장 큰 기능 중 하나다. 중앙저장소(Central Repository) 혹은 넥서스를 설치하여 구성한 사설저장소(Private Repository)를 이용하여 의존성 라이브러리를 등록하고 프로젝트에 다운로드하여 코딩 및 배포를 위한 빌드시 이용한다.
+
+* spring-boot-parent & spring-boot-auto-configure & spring-boot-dependency
+
+
+==== 패키징
+스프링 부트 플러그인
+
+* spring-boot-maven-plugin
+* spring-boot-gradle-plugin
+
+=== Code
+
+
+=== Deploy
+배포를 했을 때 애플리케이션의 동작을 제어하는...
+
+=== 프로파일
+프로파일(``@Profile``)
+
+=== ``@ConfigurationProperties``
+* 기존 ``@Value``를 이용한 애플리케이션 속성이용
+* ``@ConfigurationProperties`` 를 이용한 애플리케이션 속성이용
+
+=== `spring-configuration-metadata.json`
+
 
 == 참고문헌
 * link:https://kotlinlang.org/[Kotlin Programming Language]
-* link:https://academy.realm.io/kr/posts/kotlin-does-java-droidcon-boston-2017-gonda/[Kotlin과 Java 전격 비교 - Realm]
 * link:https://docs.gradle.org/5.0-rc-1/userguide/kotlin_dsl.html[Gradle Kotlin DSL]
