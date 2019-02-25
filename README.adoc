@@ -1,0 +1,13 @@
+= 스프링 부트 실전적용!
+honeymon, ihoneymon@gmail.com
+v0.0.1, 2019-04-27
+
+.봄날에 놀고 싶은 아홉수 개발자
+****
+이제 날 놓아줘~~~
+****
+
+== 참고문헌
+* link:https://kotlinlang.org/[Kotlin Programming Language]
+* link:https://academy.realm.io/kr/posts/kotlin-does-java-droidcon-boston-2017-gonda/[Kotlin과 Java 전격 비교 - Realm]
+* link:https://docs.gradle.org/5.0-rc-1/userguide/kotlin_dsl.html[Gradle Kotlin DSL]
